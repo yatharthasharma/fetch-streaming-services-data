@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xml:lang="en">
+  <head>
+    <title>Spotify Data</title>
+
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+
+    <!-- Styles - custom & Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Logic -->
+    <script type="text/javascript" src="JS/spotify.js"></script>
+  </head>
+
+  <body>
+    <button
+      id="authoriseButton"
+      onclick="authoriseSpotify()"
+      type="button"
+      class="btn btn-primary"
+    >
+      <a class="btn btn-primary" href="http://localhost:3000/spotify/authorise"
+        >Login with Spotify!
+      </a>
+    </button>
+    <p id="spotifyStatus"></p>
+  </body>
+</html>
